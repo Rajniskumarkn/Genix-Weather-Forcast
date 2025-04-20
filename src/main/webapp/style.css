@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('https://img.freepik.com/premium-photo/dark-shiny-soft-clouds-sky-seasonal-weather-concept_251006-5785.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.info-box {
+  background-color: rgba(255, 255, 255, 0.5);  /* 50% opacity */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  max-width: 28rem;
+  margin: auto;
+}
+
+.mainContainer {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1.5rem;
+  box-shadow:
+    0 14px 28px rgba(1, 1, 1, 0.25),
+    0 10px 10px rgba(1, 1, 1, 0.22);
+  width: 25rem;
+  padding: 2rem;
+  
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.searchInput {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.searchInput input {
+  flex: 1;
+  height: 2.8rem;
+  outline: none;
+  font-size: 1rem;
+  color: #525050;
+  padding: 0 1rem;
+  border: 1px solid #b3b3b3;
+  border-right: none;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.searchInput input:focus {
+  border-color: #9c9dde;
+}
+
+.searchInput button {
+  width: 3rem;
+  height: 2.8rem;
+  border: 1px solid #b3b3b3;
+  background-color: #fff;
+  color: #9b9b9b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput button:hover {
+  background-color: #9c9dde;
+  border-color: #9c9dde;
+  color: #fff;
+}
+
+.weatherIcon,
+.windDetails {
+  display: flex;
+  justify-content: center;
+}
+
+.weatherIcon {
+  padding: 0.5rem 0;
+}
+
+.weatherIcon img {
+  width: 8rem;
+  max-width: 100%;
+}
+
+.weatherDetails .temp {
+  font-size: 2rem;
+}
+
+.cityDetails {
+  color: #323232;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.cityDetails .date {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.windDetails {
+  justify-content: space-around;
+  margin: 1rem 0 1.5rem;
+}
+
+.windDetails .humidityBox,
+.windDetails .windSpeed {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #323232;
+}
+
+.windDetails img {
+  max-height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.windDetails .humidityValue {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.image-logo {
+  width: auto;
+  height: auto;
+  filter: drop-shadow(20px 10px 10px black);
+}
+
+.app-footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  flex-shrink: 0; 
+}
+
+
+
+
+
